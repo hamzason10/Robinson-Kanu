@@ -6,8 +6,7 @@
       state: present
   when:
       - ubtu22cis_rule_4_1_1_1
-      - "'auditd' not in ansible_facts.packages or
-        'auditd-plugins' not in ansible_facts.packages"
+      
   tags:
       - level2-server
       - level2-workstation
