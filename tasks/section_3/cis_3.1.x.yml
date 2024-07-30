@@ -68,12 +68,12 @@
       - name: "3.1.2 | PATCH | Ensure wireless interfaces are disabled | Warn about wireless if network-manager not installed"
         ansible.builtin.debug:
             msg: "Warning!! You need to disable wireless interfaces manually since network-manager is not installed"
-        when: "'network-manager' not in ansible_facts.packages"
+       
 
       - name: "3.1.2 | PATCH | Ensure wireless interfaces are disabled | Set warning count"
         ansible.builtin.import_tasks:
             file: warning_facts.yml
-        when: "'network-manager' not in ansible_facts.packages"
+       
   vars:
       warn_control_id: '3.1.2'
   when:
