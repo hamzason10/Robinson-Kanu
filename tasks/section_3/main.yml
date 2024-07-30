@@ -29,4 +29,3 @@
 - name: "SECTION | 3.5.3 | iptables Firewall Configuration"
   ansible.builtin.import_tasks:
       file: cis_3.5.3.x.yml
-  when: ubtu22cis_firewall_package == "iptables"
