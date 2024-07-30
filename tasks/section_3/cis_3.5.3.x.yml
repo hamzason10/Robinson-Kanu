@@ -71,7 +71,6 @@
         notify: Iptables persistent
         with_items:
             - FORWARD
-            - OUTPUT
   tags:
       - level1-server
       - level1-workstation
