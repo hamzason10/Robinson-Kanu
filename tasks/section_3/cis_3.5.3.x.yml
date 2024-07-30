@@ -70,7 +70,6 @@
             chain: "{{ item }}"
         notify: Iptables persistent
         with_items:
-            - INPUT
             - FORWARD
             - OUTPUT
   tags:
