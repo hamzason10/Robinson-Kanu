@@ -148,12 +148,12 @@
 #   tags:
 #       - section2
 
-- name: Include section 3 patches
-  ansible.builtin.import_tasks:
-      file: section_3/main.yml
-  when: ubtu22cis_section3
-  tags:
-      - section3
+# - name: Include section 3 patches
+#   ansible.builtin.import_tasks:
+#       file: section_3/main.yml
+#   when: ubtu22cis_section3
+#   tags:
+#       - section3
 
 - name: Include section 4 patches
   ansible.builtin.import_tasks:
